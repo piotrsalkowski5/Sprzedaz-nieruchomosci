@@ -8,6 +8,7 @@ const ROOM_TAB: Record<string, number> = {
   lazienka: 2,
   kuchnia: 3,
   przedpokój: 4,
+  balkon: 7,
 };
 
 interface Room {
@@ -58,6 +59,14 @@ const FLOOR1_ROOMS: Room[] = [
     tab: ROOM_TAB.lazienka,
     x: 576, y: 361, w: 158, h: 113,
     cx: 655, cy: 418,
+  },
+  {
+    id: "balkon",
+    label: "Balkon",
+    area: "8,5 m²",
+    tab: ROOM_TAB.balkon,
+    x: 20, y: 215, w: 110, h: 230,
+    cx: 75, cy: 320,
   },
 ];
 
@@ -197,8 +206,6 @@ export function FloorPlan({ onRoomClick, activeTab }: FloorPlanProps) {
               {/* Balcony */}
               <rect x="20" y="215" width="110" height="230" fill="none" stroke="#333" strokeWidth="2" />
               <rect x="32" y="228" width="98" height="204" fill="none" stroke="#333" strokeWidth="1" />
-              <text x="65" y="320" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="11" fontWeight="bold" fill="#334155">BALKON</text>
-              <text x="65" y="334" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="10" fill="#64748b">8,5 m²</text>
 
               {/* Compass – floor 1 */}
               <text x="805" y="56" textAnchor="middle" fontFamily="Arial" fontSize="14" fontWeight="bold" fill="#1e293b">N</text>

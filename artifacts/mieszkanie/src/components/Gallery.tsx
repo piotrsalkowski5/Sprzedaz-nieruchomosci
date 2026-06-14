@@ -45,6 +45,12 @@ const categories = [
       { src: "/garage.png", alt: "Komórka lokatorska — placeholder" },
     ],
   },
+  {
+    label: "Balkon",
+    images: [
+      { src: "/view.png", alt: "Balkon — placeholder" },
+    ],
+  },
 ];
 
 type LightboxState = { catIdx: number; imgIdx: number } | null;
