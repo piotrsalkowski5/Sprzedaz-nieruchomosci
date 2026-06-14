@@ -49,8 +49,18 @@ const categories = [
 
 type LightboxState = { catIdx: number; imgIdx: number } | null;
 
-export function Gallery() {
-  const [activeTab, setActiveTab] = useState(0);
+interface GalleryProps {
+  externalTab?: number;
+  onTabChange?: (idx: number) => void;
+}
+
+export function Gallery({ externalTab, onTabChange }: GalleryProps = {}) {
+  const [internalTab, setInternalTab] = useState(0);
+  const activeTab = externalTab !== undefined ? externalTab : internalTab;
+  const setActiveTab = (idx: number) => {
+    setInternalTab(idx);
+    onTabChange?.(idx);
+  };
   const [lightbox, setLightbox] = useState<LightboxState>(null);
 
   const currentImages = categories[activeTab].images;
