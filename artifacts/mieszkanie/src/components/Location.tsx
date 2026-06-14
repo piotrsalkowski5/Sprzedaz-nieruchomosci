@@ -13,10 +13,10 @@ export function Location() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-5xl font-serif text-primary mb-6">Doskonała Lokalizacja</h2>
+            <h2 className="text-3xl md:text-5xl font-sans font-bold text-primary mb-6">Lokalizacja</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              [PLACEHOLDER OPISU: Mieszkanie znajduje się w sercu jednej z najbardziej pożądanych dzielnic. 
-              Idealne połączenie spokoju, zieleni i szybkiego dostępu do centrum miasta. Wszędzie blisko.]
+              [PLACEHOLDER OPISU: Np. "Mieszkanie przy ul. Przykładowej, blisko centrum. Spokojna okolica, 
+              dobre połączenia komunikacyjne, szkoła i sklepy w pobliżu."]
             </p>
 
             <ul className="space-y-6">

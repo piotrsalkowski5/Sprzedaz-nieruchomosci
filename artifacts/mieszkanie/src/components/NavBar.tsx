@@ -30,8 +30,8 @@ export function NavBar() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-serif text-2xl font-semibold tracking-wide text-primary">
-          Apartament <span className="text-accent italic">Premium</span>
+        <a href="#" className="font-sans text-xl font-semibold text-primary">
+          Mieszkanie na sprzedaż
         </a>
 
         {/* Desktop Nav */}

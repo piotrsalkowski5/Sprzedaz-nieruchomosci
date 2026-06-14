@@ -21,12 +21,15 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto bg-white/95 backdrop-blur-sm p-8 md:p-12 border border-white/20 shadow-2xl"
         >
-          <span className="block text-sm md:text-base font-semibold tracking-[0.2em] text-accent uppercase mb-4">
+          <span className="block text-sm md:text-base font-medium tracking-widest text-muted-foreground uppercase mb-4">
             Na sprzedaż
           </span>
-          <h1 className="text-4xl md:text-6xl font-serif text-primary leading-tight mb-6">
-            Wyjątkowe mieszkanie <br className="hidden md:block" />z prywatnym garażem
+          <h1 className="text-4xl md:text-6xl font-sans font-bold text-primary leading-tight mb-6">
+            Mieszkanie z garażem
           </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-2">
+            [ADRES / DZIELNICA]
+          </p>
           <p className="text-xl md:text-2xl text-muted-foreground font-light mb-8">
             Cena: <span className="font-semibold text-primary">[WSTAW CENĘ] PLN</span>
           </p>

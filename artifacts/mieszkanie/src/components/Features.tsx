@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Sun, Car, MapPin, Wind, Zap, ShieldCheck } from "lucide-react";
 
 const features = [
-  { icon: <Sun className="w-8 h-8" />, title: "Słoneczna ekspozycja", desc: "Znakomite doświetlenie przez cały dzień dzięki południowo-zachodniej wystawie." },
-  { icon: <Car className="w-8 h-8" />, title: "Garaż w cenie", desc: "Prywatne, bezpieczne miejsce parkingowe w podziemnej hali garażowej." },
-  { icon: <MapPin className="w-8 h-8" />, title: "Prestiżowa dzielnica", desc: "[PLACEHOLDER: krótki opis prestiżowej lokalizacji i sąsiedztwa]" },
-  { icon: <Wind className="w-8 h-8" />, title: "Balkon / Taras", desc: "Przestronny taras idealny do porannej kawy i relaksu po pracy." },
-  { icon: <Zap className="w-8 h-8" />, title: "Nowa instalacja", desc: "Budynek z nowoczesnymi rozwiązaniami, niska energochłonność." },
-  { icon: <ShieldCheck className="w-8 h-8" />, title: "Cicha ulica", desc: "Okolica wolna od zgiełku głównych dróg, pełen komfort." },
+  { icon: <Sun className="w-8 h-8" />, title: "Dobrze doświetlone", desc: "Mieszkanie z oknami na [PLACEHOLDER: południe/wschód], dużo naturalnego światła." },
+  { icon: <Car className="w-8 h-8" />, title: "Garaż w cenie", desc: "W cenie sprzedaży garaż — nie trzeba szukać miejsca parkingowego." },
+  { icon: <MapPin className="w-8 h-8" />, title: "Dobra lokalizacja", desc: "[PLACEHOLDER: opis okolicy — co jest w pobliżu, dostęp do komunikacji]" },
+  { icon: <Wind className="w-8 h-8" />, title: "Balkon", desc: "Balkon od [PLACEHOLDER: strony] — można wstawić meble ogrodowe." },
+  { icon: <Zap className="w-8 h-8" />, title: "Sprawna instalacja", desc: "[PLACEHOLDER: opis stanu instalacji — elektryka, hydraulika, ogrzewanie]" },
+  { icon: <ShieldCheck className="w-8 h-8" />, title: "Spokojna okolica", desc: "[PLACEHOLDER: opis otoczenia — cicha ulica / blok / osiedle]" },
 ];
 
 export function Features() {
@@ -15,7 +15,7 @@ export function Features() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-serif text-primary mb-4">Główne Atuty</h2>
+          <h2 className="text-3xl md:text-5xl font-sans font-bold text-primary mb-4">Co oferuje mieszkanie</h2>
           <div className="w-24 h-1 bg-accent mx-auto" />
         </div>
 
