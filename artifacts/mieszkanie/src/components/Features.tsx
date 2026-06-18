@@ -5,7 +5,7 @@ const features = [
   {
     icon: <Sun className="w-8 h-8" />,
     title: "Dobrze doświetlone",
-    desc: "Mieszkanie z oknami na północ, wschód oraz zachód (w zależności od pomieszczenia), dużo naturalnego światła.",
+    desc: "Mieszkanie z oknami na północ, wschód oraz zachód (w zależności od pomieszczenia).",
   },
   {
     icon: <Car className="w-8 h-8" />,

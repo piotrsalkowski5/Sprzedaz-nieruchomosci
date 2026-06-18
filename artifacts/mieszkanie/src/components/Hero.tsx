@@ -35,7 +35,7 @@ export function Hero() {
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground font-light mb-8">
             Cena:{" "}
-            <span className="font-semibold text-primary">350 000 PLN</span>
+            <span className="font-semibold text-primary">425 000 PLN</span>
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
