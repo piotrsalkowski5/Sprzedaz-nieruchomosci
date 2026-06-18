@@ -93,7 +93,7 @@ export function Contact() {
                       Email
                     </p>
                     <p className="text-xl font-medium">
-                      piotrsalkowski5@gmail.com
+                      piotrsalkowski5 @gmail.com
                     </p>
                   </div>
                 </div>
