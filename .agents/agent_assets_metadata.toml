@@ -1,0 +1,44 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "jrh10w6AkhXL6T9JIwlnp"
+uri = "file://artifacts/mieszkanie/public/hero.png"
+type = "image"
+title = "Premium apartment living room hero"
+
+[[generated]]
+id = "oxWWs6UxASf4h727bR0kt"
+uri = "file://artifacts/mieszkanie/public/living_room.png"
+type = "image"
+title = "Premium living room"
+
+[[generated]]
+id = "375Yd2foAppaSD_bm4Oo-"
+uri = "file://artifacts/mieszkanie/public/bedroom.png"
+type = "image"
+title = "Premium bedroom"
+
+[[generated]]
+id = "0-EyoUfUGHZ3gyHMGJuhF"
+uri = "file://artifacts/mieszkanie/public/kitchen.png"
+type = "image"
+title = "Premium kitchen"
+
+[[generated]]
+id = "qIApmNLo5kBuhdEZ2zvxm"
+uri = "file://artifacts/mieszkanie/public/bathroom.png"
+type = "image"
+title = "Premium bathroom"
+
+[[generated]]
+id = "0LX6G-k9V6GQkoFyDyQeB"
+uri = "file://artifacts/mieszkanie/public/view.png"
+type = "image"
+title = "Premium window view"
+
+[[generated]]
+id = "LJm44ndugJ9DdXq9jre6W"
+uri = "file://artifacts/mieszkanie/public/garage.png"
+type = "image"
+title = "Premium garage space"
