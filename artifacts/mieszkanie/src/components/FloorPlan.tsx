@@ -111,7 +111,13 @@ function RoomOverlay({
         y={room.y}
         width={room.w}
         height={room.h}
-        fill={active ? "rgba(170,130,60,0.25)" : hovered ? "rgba(170,130,60,0.15)" : "rgba(248,246,240,0.0)"}
+        fill={
+          active
+            ? "rgba(170,130,60,0.25)"
+            : hovered
+              ? "rgba(170,130,60,0.15)"
+              : "rgba(248,246,240,0.0)"
+        }
         stroke={active ? "#aa823c" : hovered ? "#aa823c" : "transparent"}
         strokeWidth={active || hovered ? 2 : 0}
         style={{ transition: "fill 0.2s, stroke 0.2s" }}
@@ -119,7 +125,7 @@ function RoomOverlay({
       {(hovered || active) && (
         <text
           x={room.cx}
-          y={room.cy + 18}
+          y={room.cy + 28}
           textAnchor="middle"
           fontSize="11"
           fontFamily="Arial, sans-serif"

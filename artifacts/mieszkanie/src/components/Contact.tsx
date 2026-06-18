@@ -52,10 +52,11 @@ export function Contact() {
           className="max-w-5xl mx-auto bg-primary text-primary-foreground shadow-2xl overflow-hidden"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2">
-
             {/* Contact Info */}
             <div className="p-12 md:p-16 flex flex-col justify-center">
-              <h2 className="text-3xl md:text-4xl font-sans font-bold mb-4">Umów oglądanie</h2>
+              <h2 className="text-3xl md:text-4xl font-sans font-bold mb-4">
+                Umów oglądanie
+              </h2>
               <p className="text-white/70 mb-12">
                 Zainteresowany? Zadzwoń lub napisz, chętnie umówimy termin.
               </p>
@@ -66,8 +67,10 @@ export function Contact() {
                     <User size={24} />
                   </div>
                   <div>
-                    <p className="text-sm text-white/50 uppercase tracking-wider mb-1">Osoba kontaktowa</p>
-                    <p className="text-xl font-medium">[IMIĘ NAZWISKO]</p>
+                    <p className="text-sm text-white/50 uppercase tracking-wider mb-1">
+                      Osoba kontaktowa
+                    </p>
+                    <p className="text-xl font-medium">PIOTR SAŁKOWSKI</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -75,8 +78,10 @@ export function Contact() {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <p className="text-sm text-white/50 uppercase tracking-wider mb-1">Telefon</p>
-                    <p className="text-xl font-medium">[TELEFON]</p>
+                    <p className="text-sm text-white/50 uppercase tracking-wider mb-1">
+                      Telefon
+                    </p>
+                    <p className="text-xl font-medium">+48 784-350-821</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -84,8 +89,12 @@ export function Contact() {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <p className="text-sm text-white/50 uppercase tracking-wider mb-1">Email</p>
-                    <p className="text-xl font-medium">[EMAIL]</p>
+                    <p className="text-sm text-white/50 uppercase tracking-wider mb-1">
+                      Email
+                    </p>
+                    <p className="text-xl font-medium">
+                      piotrsalkowski5@gmail.com
+                    </p>
                   </div>
                 </div>
               </div>
@@ -93,7 +102,9 @@ export function Contact() {
 
             {/* Contact Form */}
             <div className="bg-secondary p-12 md:p-16 text-primary">
-              <h3 className="text-2xl font-sans font-bold mb-8">Napisz wiadomość</h3>
+              <h3 className="text-2xl font-sans font-bold mb-8">
+                Napisz wiadomość
+              </h3>
 
               {status === "success" ? (
                 <motion.div
@@ -103,8 +114,12 @@ export function Contact() {
                   data-testid="contact-success"
                 >
                   <CheckCircle className="text-green-600 w-16 h-16 mb-4" />
-                  <h4 className="text-xl font-semibold mb-2">Wiadomość wysłana!</h4>
-                  <p className="text-muted-foreground">Odezwiemy się najszybciej jak to możliwe.</p>
+                  <h4 className="text-xl font-semibold mb-2">
+                    Wiadomość wysłana!
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Odezwiemy się najszybciej jak to możliwe.
+                  </p>
                   <button
                     className="mt-6 text-sm underline text-muted-foreground"
                     onClick={() => setStatus("idle")}
@@ -115,11 +130,16 @@ export function Contact() {
               ) : (
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">Imię i nazwisko</label>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium mb-2"
+                    >
+                      Imię i nazwisko
+                    </label>
                     <Input
                       id="name"
                       value={name}
-                      onChange={(e) => setName(e.target.value)}
+                      onChange={e => setName(e.target.value)}
                       placeholder="Jan Kowalski"
                       required
                       disabled={status === "sending"}
@@ -128,11 +148,16 @@ export function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium mb-2">Numer telefonu</label>
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium mb-2"
+                    >
+                      Numer telefonu
+                    </label>
                     <Input
                       id="phone"
                       value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
+                      onChange={e => setPhone(e.target.value)}
                       placeholder="+48 000 000 000"
                       required
                       disabled={status === "sending"}
@@ -141,11 +166,16 @@ export function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">Wiadomość</label>
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium mb-2"
+                    >
+                      Wiadomość
+                    </label>
                     <Textarea
                       id="message"
                       value={message}
-                      onChange={(e) => setMessage(e.target.value)}
+                      onChange={e => setMessage(e.target.value)}
                       placeholder="Dzień dobry, chciałbym umówić się na obejrzenie mieszkania..."
                       required
                       disabled={status === "sending"}
@@ -155,7 +185,10 @@ export function Contact() {
                   </div>
 
                   {status === "error" && (
-                    <div className="flex items-center gap-2 text-red-600 text-sm" data-testid="contact-error">
+                    <div
+                      className="flex items-center gap-2 text-red-600 text-sm"
+                      data-testid="contact-error"
+                    >
                       <AlertCircle size={16} />
                       <span>{errorMsg}</span>
                     </div>
@@ -172,7 +205,6 @@ export function Contact() {
                 </form>
               )}
             </div>
-
           </div>
         </motion.div>
       </div>

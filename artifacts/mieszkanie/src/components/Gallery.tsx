@@ -6,49 +6,59 @@ const categories = [
   {
     label: "Salon",
     images: [
-      { src: "/living_room.png", alt: "Salon" },
+      { src: "/salon1.jpg", alt: "Salon" },
+      { src: "/salon2.jpg", alt: "Salon" },
+      { src: "/salon3.jpg", alt: "Salon" },
+      { src: "/salon4.jpg", alt: "Salon" },
     ],
   },
   {
     label: "Sypialnia",
     images: [
-      { src: "/bedroom.png", alt: "Sypialnia" },
+      { src: "/sypialnia1.jpg", alt: "Sypialnia" },
+      { src: "/sypialnia2.jpg", alt: "Sypialnia" },
+      { src: "/sypialnia3.jpg", alt: "Sypialnia" },
+      { src: "/sypialnia4.jpg", alt: "Sypialnia" },
+      { src: "/sypialnia5.jpg", alt: "Sypialnia" },
     ],
   },
   {
     label: "Łazienka",
     images: [
-      { src: "/bathroom.png", alt: "Łazienka" },
+      { src: "/lazienka1.jpg", alt: "Łazienka" },
+      { src: "/lazienka2.jpg", alt: "Łazienka" },
+      { src: "/lazienka3.jpg", alt: "Łazienka" },
     ],
   },
   {
     label: "Kuchnia",
     images: [
-      { src: "/kitchen.png", alt: "Kuchnia" },
+      { src: "/kuchnia1.jpg", alt: "Kuchnia" },
+      { src: "/kuchnia2.jpg", alt: "Kuchnia" },
     ],
   },
   {
     label: "Przedpokój",
     images: [
-      { src: "/view.png", alt: "Przedpokój — placeholder" },
+      { src: "/przedpokoj1.jpg", alt: "Przedpokój" },
+      { src: "/przedpokoj2.jpg", alt: "Przedpokój" },
+      { src: "/schody1.jpg", alt: "Przedpokój" },
+      { src: "/schody2.jpg", alt: "Przedpokój" },
     ],
   },
   {
     label: "Garaż",
-    images: [
-      { src: "/garage.png", alt: "Garaż" },
-    ],
+    images: [{ src: "/garage.png", alt: "Garaż" }],
   },
   {
-    label: "Komórka lokatorska",
-    images: [
-      { src: "/garage.png", alt: "Komórka lokatorska — placeholder" },
-    ],
+    label: "Piwnica",
+    images: [{ src: "/garage.png", alt: "Piwnica" }],
   },
   {
     label: "Balkon",
     images: [
-      { src: "/view.png", alt: "Balkon — placeholder" },
+      { src: "/balkon1.jpg", alt: "Balkon" },
+      { src: "/balkon2.jpg", alt: "Balkon" },
     ],
   },
 ];

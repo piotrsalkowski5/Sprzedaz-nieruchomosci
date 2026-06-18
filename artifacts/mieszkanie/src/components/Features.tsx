@@ -2,12 +2,31 @@ import { motion } from "framer-motion";
 import { Sun, Car, MapPin, Wind, Zap, ShieldCheck } from "lucide-react";
 
 const features = [
-  { icon: <Sun className="w-8 h-8" />, title: "Dobrze doświetlone", desc: "Mieszkanie z oknami na [PLACEHOLDER: południe/wschód], dużo naturalnego światła." },
-  { icon: <Car className="w-8 h-8" />, title: "Garaż w cenie", desc: "W cenie sprzedaży garaż — nie trzeba szukać miejsca parkingowego." },
-  { icon: <MapPin className="w-8 h-8" />, title: "Dobra lokalizacja", desc: "[PLACEHOLDER: opis okolicy — co jest w pobliżu, dostęp do komunikacji]" },
-  { icon: <Wind className="w-8 h-8" />, title: "Balkon", desc: "Balkon od [PLACEHOLDER: strony] — można wstawić meble ogrodowe." },
-  { icon: <Zap className="w-8 h-8" />, title: "Sprawna instalacja", desc: "[PLACEHOLDER: opis stanu instalacji — elektryka, hydraulika, ogrzewanie]" },
-  { icon: <ShieldCheck className="w-8 h-8" />, title: "Spokojna okolica", desc: "[PLACEHOLDER: opis otoczenia — cicha ulica / blok / osiedle]" },
+  {
+    icon: <Sun className="w-8 h-8" />,
+    title: "Dobrze doświetlone",
+    desc: "Mieszkanie z oknami na północ, wschód oraz zachód (w zależności od pomieszczenia), dużo naturalnego światła.",
+  },
+  {
+    icon: <Car className="w-8 h-8" />,
+    title: "Garaż",
+    desc: "Możliwość dokupienia wraz z mieszkaniem wbudowanego w budynek murowanego garażu — nie trzeba szukać miejsca parkingowego.",
+  },
+  {
+    icon: <MapPin className="w-8 h-8" />,
+    title: "Dobra lokalizacja",
+    desc: "Mieszkanie prawie w centrum Płońska, szkoła na przeciwko, blisko sklepy, kościół, apteka, park i plac zabaw, 300 m do basenu",
+  },
+  {
+    icon: <Wind className="w-8 h-8" />,
+    title: "Balkon",
+    desc: "Balkon od wschodniej strony — można wstawić meble ogrodowe.",
+  },
+  {
+    icon: <ShieldCheck className="w-8 h-8" />,
+    title: "Spokojna okolica",
+    desc: "W miarę cicha ulica, życzliwi sąsiedzi.",
+  },
 ];
 
 export function Features() {

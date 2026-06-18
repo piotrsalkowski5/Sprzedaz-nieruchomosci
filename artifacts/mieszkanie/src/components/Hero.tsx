@@ -6,11 +6,11 @@ export function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/hero.png)' }}
+        style={{ backgroundImage: "url(/widok1.jpg)" }}
       />
-      
+
       {/* Overlay to ensure text readability */}
       <div className="absolute inset-0 z-10 bg-black/30" />
 
@@ -27,17 +27,21 @@ export function Hero() {
           <h1 className="text-4xl md:text-6xl font-sans font-bold text-primary leading-tight mb-6">
             Mieszkanie z garażem
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-2">
-            [ADRES / DZIELNICA]
+          <p className="text-lg md:text-xl text-muted-foreground mb-3">
+            Płońsk
+            <br />
+            ul. Mikołaja Kopernika 5<br />
+            09-100 Płońsk
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground font-light mb-8">
-            Cena: <span className="font-semibold text-primary">[WSTAW CENĘ] PLN</span>
+            Cena:{" "}
+            <span className="font-semibold text-primary">350 000 PLN</span>
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
-              asChild 
-              size="lg" 
+            <Button
+              asChild
+              size="lg"
               className="w-full sm:w-auto rounded-none bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg"
               data-testid="button-hero-contact"
             >
@@ -45,16 +49,14 @@ export function Hero() {
                 Umów oglądanie <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
-            <Button 
-              asChild 
+            <Button
+              asChild
               variant="outline"
-              size="lg" 
+              size="lg"
               className="w-full sm:w-auto rounded-none border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg"
               data-testid="button-hero-email"
             >
-              <a href="#kontakt">
-                Napisz do nas
-              </a>
+              <a href="#kontakt">Napisz do nas</a>
             </Button>
           </div>
         </motion.div>
