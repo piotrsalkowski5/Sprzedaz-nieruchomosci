@@ -1,8 +1,15 @@
-import { Router } from "express";
+import { Router, type Request, type Response } from "express";
 import nodemailer from "nodemailer";
 import { z } from "zod";
 
 const router = Router();
+
+type RequestWithLog = Request & {
+  log: {
+    info: (...args: unknown[]) => void;
+    error: (...args: unknown[]) => void;
+  };
+};
 
 const contactSchema = z.object({
   name: z.string().min(1, "Imię jest wymagane"),
@@ -10,11 +17,16 @@ const contactSchema = z.object({
   message: z.string().min(1, "Wiadomość jest wymagana"),
 });
 
-router.post("/contact", async (req, res) => {
+router.post("/contact", async (req: RequestWithLog, res: Response) => {
   const parsed = contactSchema.safeParse(req.body);
 
   if (!parsed.success) {
-    res.status(400).json({ error: "Nieprawidłowe dane formularza", details: parsed.error.issues });
+    res
+      .status(400)
+      .json({
+        error: "Nieprawidłowe dane formularza",
+        details: parsed.error.issues,
+      });
     return;
   }
 
@@ -26,7 +38,9 @@ router.post("/contact", async (req, res) => {
 
   if (!gmailUser || !gmailPass) {
     req.log.error("Brak konfiguracji Gmail (GMAIL_USER / GMAIL_APP_PASSWORD)");
-    res.status(500).json({ error: "Serwer nie jest skonfigurowany do wysyłania maili" });
+    res
+      .status(500)
+      .json({ error: "Serwer nie jest skonfigurowany do wysyłania maili" });
     return;
   }
 
@@ -74,7 +88,9 @@ router.post("/contact", async (req, res) => {
     res.json({ success: true });
   } catch (err) {
     req.log.error({ err }, "Błąd wysyłki maila");
-    res.status(500).json({ error: "Nie udało się wysłać wiadomości. Spróbuj ponownie." });
+    res
+      .status(500)
+      .json({ error: "Nie udało się wysłać wiadomości. Spróbuj ponownie." });
   }
 });
 
