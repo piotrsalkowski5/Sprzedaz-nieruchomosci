@@ -1,4 +1,4 @@
-import { Router, type Request, type Response } from "express";
+import { Router } from "express";
 import nodemailer from "nodemailer";
 import { z } from "zod";
 
@@ -10,11 +10,11 @@ const contactSchema = z.object({
   message: z.string().min(1, "Wiadomość jest wymagana"),
 });
 
-router.get("/", async (_req: Request, res: Response): Promise<void> => {
+router.get("/", async (_req: any, res: any): Promise<void> => {
   res.json({ success: true });
 });
 
-router.post("/contact", async (req: Request, res: Response): Promise<void> => {
+router.post("/contact", async (req: any, res: any): Promise<void> => {
   const parsed = contactSchema.safeParse(req.body);
 
   if (!parsed.success) {
