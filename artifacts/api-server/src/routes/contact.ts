@@ -17,6 +17,11 @@ const contactSchema = z.object({
   message: z.string().min(1, "Wiadomość jest wymagana"),
 });
 
+router.get("/", async (req: RequestWithLog, res: Response) => {
+  req.log.info({}, "Utworono zapytanie get");
+  res.json({ success: true });
+});
+
 router.post("/contact", async (req: RequestWithLog, res: Response) => {
   const parsed = contactSchema.safeParse(req.body);
 
