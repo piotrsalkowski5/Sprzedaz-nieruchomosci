@@ -20,11 +20,14 @@ export function Contact() {
     setErrorMsg("");
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, phone, message }),
-      });
+      const res = await fetch(
+        "https://sprzedaz-nieruchomosci-api-server-12v6156ne-piotr9422.vercel.app/api/contact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, phone, message }),
+        }
+      );
 
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
