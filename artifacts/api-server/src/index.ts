@@ -24,8 +24,6 @@
 //   logger.info({ port }, "Server listening");
 // });
 
-
-import app from "./app.js";
+import app from "./app";
 
 export default app;
-
