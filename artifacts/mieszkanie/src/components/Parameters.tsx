@@ -31,7 +31,7 @@ export function Parameters() {
             </h3>
             <dl className="space-y-4">
               {[
-                { label: "Cena", value: "350 000 PLN" },
+                { label: "Cena", value: "410 000 PLN" },
                 { label: "Metraż", value: "72 m²" },
                 { label: "Liczba pokoi", value: "2" },
                 { label: "Piętro", value: "3 z 4 bez windy" },
@@ -74,7 +74,7 @@ export function Parameters() {
             </h3>
             <dl className="space-y-4">
               {[
-                { label: "Cena", value: "75 000 PLN" },
+                { label: "Cena", value: "80 000 PLN" },
                 { label: "Wliczony w cenę", value: "Nie" },
                 { label: "Powierzchnia", value: "16 m²" },
                 { label: "Rodzaj", value: "Murowany, część bloku" },
