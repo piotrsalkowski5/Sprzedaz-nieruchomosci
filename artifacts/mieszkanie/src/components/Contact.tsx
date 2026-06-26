@@ -179,13 +179,13 @@ export function Contact() {
                       htmlFor="email"
                       className="block text-sm font-medium mb-2"
                     >
-                      Numer telefonu
+                      Adres e-mail
                     </label>
                     <Input
                       id="email"
                       value={email}
                       onChange={e => setEmail(e.target.value)}
-                      placeholder="@"
+                      placeholder="kontakt@sprzedaz-mieszkania-kopernika.pl"
                       required
                       disabled={status === "sending"}
                       className="bg-white border-transparent rounded-none h-12"
