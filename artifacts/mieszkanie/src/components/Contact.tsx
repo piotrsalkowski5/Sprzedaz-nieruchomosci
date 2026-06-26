@@ -100,9 +100,7 @@ export function Contact() {
                       Email
                     </p>
                     <p className="text-xl font-medium">
-                      piotrsalkowski5
-                      <br />
-                      @gmail.com
+                      sprzedaznieruchomosckopernika@gmail.com
                     </p>
                   </div>
                 </div>
@@ -185,7 +183,7 @@ export function Contact() {
                       id="email"
                       value={email}
                       onChange={e => setEmail(e.target.value)}
-                      placeholder="kontakt@sprzedaz-mieszkania-kopernika.pl"
+                      placeholder="sprzedaznieruchomosckopernika@gmail.com"
                       required
                       disabled={status === "sending"}
                       className="bg-white border-transparent rounded-none h-12"
