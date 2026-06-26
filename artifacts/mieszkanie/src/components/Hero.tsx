@@ -33,10 +33,14 @@ export function Hero() {
             ul. Mikołaja Kopernika 5<br />
             09-100 Płońsk
           </p>
-          <p className="text-xl md:text-2xl text-muted-foreground font-light mb-8">
+          <p className="text-xl md:text-2xl text-muted-foreground font-light mb-3">
             Cena:{" "}
             <span className="font-semibold text-primary">490 000 PLN</span> do
             negocjacji
+          </p>
+
+          <p className="text-md md:text-xl text-muted-foreground mb-8">
+            Brak pośredników!!! Kupujesz od osoby prywatnej.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
