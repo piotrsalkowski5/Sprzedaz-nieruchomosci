@@ -100,7 +100,13 @@ export function Contact() {
                       Email
                     </p>
                     <p className="text-xl font-medium">
-                      sprzedaznieruchomosckopernika@gmail.com
+                      sprzedaz
+                      <br />
+                      nieruchomosc
+                      <br />
+                      kopernika
+                      <br />
+                      @gmail.com
                     </p>
                   </div>
                 </div>
