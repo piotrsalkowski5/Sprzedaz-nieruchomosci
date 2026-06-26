@@ -10,6 +10,7 @@ type Status = "idle" | "sending" | "success" | "error";
 export function Contact() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -21,11 +22,11 @@ export function Contact() {
 
     try {
       const res = await fetch(
-        "https://sprzedaz-nieruchomosci-api-server-12v6156ne-piotr9422.vercel.app/api/contact",
+        "https://server-api-n.vercel.app/api/contact-person",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, phone, message }),
+          body: JSON.stringify({ name, phone, email, message }),
         }
       );
 
@@ -38,9 +39,12 @@ export function Contact() {
       setName("");
       setPhone("");
       setMessage("");
+      setEmail("");
     } catch (err) {
       setStatus("error");
-      setErrorMsg(err instanceof Error ? err.message : "Wystąpił błąd. Spróbuj ponownie.");
+      setErrorMsg(
+        err instanceof Error ? err.message : "Wystąpił błąd. Spróbuj ponownie."
+      );
     }
   };
 
@@ -168,6 +172,24 @@ export function Contact() {
                       disabled={status === "sending"}
                       className="bg-white border-transparent rounded-none h-12"
                       data-testid="input-phone"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium mb-2"
+                    >
+                      Numer telefonu
+                    </label>
+                    <Input
+                      id="email"
+                      value={email}
+                      onChange={e => setEmail(e.target.value)}
+                      placeholder="@"
+                      required
+                      disabled={status === "sending"}
+                      className="bg-white border-transparent rounded-none h-12"
+                      data-testid="input-email"
                     />
                   </div>
                   <div>
