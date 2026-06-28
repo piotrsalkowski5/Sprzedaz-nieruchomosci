@@ -213,6 +213,12 @@ export function Contact() {
                       className="bg-white border-transparent rounded-none min-h-[120px]"
                       data-testid="input-message"
                     />
+                    <span className="numberChars">
+                      Liczba znaków:{" "}
+                      <span className="font-bold">
+                        {message?.length || 0}/1000
+                      </span>
+                    </span>
                   </div>
 
                   {status === "error" && (
