@@ -209,6 +209,7 @@ export function Contact() {
                       onChange={e => setMessage(e.target.value)}
                       placeholder="Dzień dobry, chciałbym umówić się na obejrzenie mieszkania..."
                       required
+                      maxLength={1000}
                       disabled={status === "sending"}
                       className="bg-white border-transparent rounded-none min-h-[120px]"
                       data-testid="input-message"
