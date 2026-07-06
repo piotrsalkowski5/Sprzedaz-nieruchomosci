@@ -47,18 +47,21 @@ const categories = [
     ],
   },
   {
-    label: "Garaż",
-    images: [{ src: "/garage.png", alt: "Garaż" }],
-  },
-  {
-    label: "Piwnica",
-    images: [{ src: "/garage.png", alt: "Piwnica" }],
-  },
-  {
     label: "Balkon",
     images: [
       { src: "/balkon1.jpg", alt: "Balkon" },
       { src: "/balkon2.jpg", alt: "Balkon" },
+    ],
+  },
+  {
+    label: "Garaż",
+    images: [
+      { src: "/garaz1.jpeg", alt: "Garaż" },
+      { src: "/garaz3.jpeg", alt: "Garaż" },
+      { src: "/garaz4.jpeg", alt: "Garaż" },
+      { src: "/garaz2.jpeg", alt: "Garaż" },
+      { src: "/garaz5.jpeg", alt: "Garaż" },
+      { src: "/garaz6.jpeg", alt: "Garaż" },
     ],
   },
 ];
