@@ -64,6 +64,10 @@ export function Hero() {
               <a href="#kontakt">Napisz do nas</a>
             </Button>
           </div>
+
+          <div className="copyright">
+            &copy; 2026 Piotr Sałkowski. Wszelkie prawa zastrzeżone.
+          </div>
         </motion.div>
       </div>
     </section>
