@@ -48,6 +48,7 @@ export function Parameters() {
                 },
                 { label: "Stan mieszkania", value: "Używane / do remontu" },
                 { label: "Stan prawny", value: "Własność" },
+                { label: "Dostępność", value: "od 15 sierpnia 2026r." },
               ].map((item, idx) => (
                 <div
                   key={idx}
