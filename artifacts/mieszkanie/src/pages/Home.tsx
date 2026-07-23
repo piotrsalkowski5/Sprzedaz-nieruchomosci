@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { NavBar } from "@/components/NavBar";
 import { Hero } from "@/components/Hero";
 import { Gallery } from "@/components/Gallery";
@@ -18,6 +18,14 @@ export default function Home() {
       el.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  React.useEffect(() => {
+    fetch("https://server-api-n.vercel.app/api/get-person", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: null,
+    });
+  }, []);
 
   return (
     <main className="min-h-screen bg-background">

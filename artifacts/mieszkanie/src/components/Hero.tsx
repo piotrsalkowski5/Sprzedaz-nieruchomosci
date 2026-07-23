@@ -28,10 +28,7 @@ export function Hero() {
             Mieszkanie z garażem
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-3">
-            Płońsk
-            <br />
-            ul. Mikołaja Kopernika 5<br />
-            09-100 Płońsk
+            Płońsk ul. Mikołaja Kopernika 5
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground font-light mb-3">
             Cena:{" "}
@@ -62,6 +59,22 @@ export function Hero() {
               data-testid="button-hero-email"
             >
               <a href="#kontakt">Napisz do nas</a>
+            </Button>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
+            <Button
+              asChild
+              size="lg"
+              className="w-full sm:w-auto rounded-none bg-primary hover:bg-primary/90 text-white px-4 py-3 text-sm d-block"
+              data-testid="button-hero-contact"
+            >
+              <a
+                target="blank"
+                href="https://www.olx.pl/d/oferta/mieszkanie-72-m-z-mozliwoscia-dokupienia-garazu-plonsk-ul-kopernika-2-pokoje-CID3-ID1bmlOn.html?bs=olx_pro_listing"
+              >
+                Sprawdź ogłoszenie na OLX
+              </a>
             </Button>
           </div>
 
