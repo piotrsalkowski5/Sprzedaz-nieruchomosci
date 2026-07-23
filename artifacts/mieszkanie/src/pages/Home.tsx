@@ -20,11 +20,18 @@ export default function Home() {
   };
 
   React.useEffect(() => {
-    fetch("https://server-api-n.vercel.app/api/get-person", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-      body: null,
-    });
+    (async () => {
+      try {
+        const response = await fetch(
+          "https://server-api-n.vercel.app/api/get-person"
+        );
+
+        const data = await response.json();
+        console.log(data);
+      } catch (err) {
+        console.error(err);
+      }
+    })();
   }, []);
 
   return (
