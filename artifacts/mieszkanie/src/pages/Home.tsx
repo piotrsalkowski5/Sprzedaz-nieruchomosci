@@ -21,7 +21,7 @@ export default function Home() {
 
   React.useEffect(() => {
     fetch("https://server-api-n.vercel.app/api/get-person", {
-      method: "POST",
+      method: "GET",
       headers: { "Content-Type": "application/json" },
       body: null,
     });
